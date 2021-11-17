@@ -16,7 +16,7 @@ fitFunctionSSP <- function(parms, nTrials, cutPoints, humanProps, HumanTrialCoun
   #source the rcpp function that will be used for simulating the model (implemented in cpp to improve speed)
   # The rcpp file contains the actual "model"; all of the code in this script is for loading data, calling 
   # the model to simulate, fit the data, etc.
-  Rcpp::sourceCpp("C:/Users/gbuzzell/Documents/George/compModels/SSP_deOptim/simSSP_model_GB_noScale.cpp")
+  Rcpp::sourceCpp("/Users/ostibolt/OneDrive - Florida International University/Research/DDM project/Code_for_DDM/simSSP_model_par_noScale.cpp")
   
   # initialise empty matrix for simulation data with three columns (RT, accuracy, congruency)
   # and with rows = nTrials
@@ -30,13 +30,13 @@ fitFunctionSSP <- function(parms, nTrials, cutPoints, humanProps, HumanTrialCoun
   # 
   #simulate congruent trials and save simulated trial-level data
   set.seed(42) # Before running simulation for this param set, set random number seed, so psuedo-ranndomnass is identical across param sets
-  SimData[1:nTrials, 1:2] <-simSSP_model_GBnoScale(parms, trialType = 1, nTrials, dt = 0.001, vari = 0.01)
+  SimData[1:nTrials, 1:2] <-simSSP_model_par_noScale_cpp(parms, trialType = 1, nTrials, dt = 0.001, vari = 0.01)
   SimData[1:nTrials, 3] <- 0 #congruent
   set.seed(as.numeric(Sys.time())) #now that simulation has been run, reset the random seed to system time (to not mess up other functions using random numbers)
 
   #Now simulate incongruent trials and save simulated trial-level data
   set.seed(42) # Before running simulation for this param set, set random number seed, so psuedo-ranndomnass is identical across param sets
-  SimData[(nTrials + 1):(nTrials * 2), 1:2] <- simSSP_model_GBnoScale(parms, trialType = 2, nTrials, dt = 0.001, vari = 0.01)
+  SimData[(nTrials + 1):(nTrials * 2), 1:2] <- simSSP_model_par_noScale_cpp(parms, trialType = 2, nTrials, dt = 0.001, vari = 0.01)
   SimData[(nTrials + 1):(nTrials * 2), 3] <- 1 #incongruent
   set.seed(as.numeric(Sys.time())) #now that simulation has been run, reset the random seed to system time (to not mess up other functions using random numbers)
   
@@ -199,7 +199,7 @@ library(DEoptim)
 library("Rcpp")
 
 #switch to the desired workng directory
-setwd('C:/Users/gbuzzell/Documents/George/compModels/SSP_deOptim/')
+setwd("~/OneDrive - Florida International University/Research/DDM project/Code_for_DDM")
 
 #set up default parms and upper/lower values (for now, not using default values, just upper/lower with DEoptim)
 Upper <- c(0.232, 0.420, 0.630, 0.067,  3.093); #mean of white 2011 plus 5 sd
@@ -207,14 +207,14 @@ Lower <- c(0.032, 0.180, 0.130, 0.0001, 0.493); #mean of white 2011 minus 5 sd
 numParams <- length(Upper)
 
 # how many trials to simulate per condition 
-nTrials = 1000
+nTrials = 10
 
 #names files
-HumanDataName <-"flankr_data_priorAcc_SocialContext_new.csv"
+HumanDataName <-"OAS_test.csv"
 FitOutputName <-"1000trialFits_5sdBounds_For_flankr_data_priorAcc_SocialContext_new_Subs101toEND_"
 
 #get the desired humann data to fit the ssp model to
-importDat = read.csv(HumanDataName, header = FALSE) #data does not have header
+importDat = read.csv(HumanDataName, header = TRUE) #data does not have header
 #add headers to imported data file
 colnames(importDat) <- c("subject", "condition", "rt", "accuracy", "congruency")
 
@@ -230,10 +230,10 @@ for(c in 1:2){
   #111: postCorr,Social
   
   if(c == 1){
-    whichCondition <- 110
+    whichCondition <- 10
   } 
   if(c == 2){
-    whichCondition <- 111
+    whichCondition <- 11
   }
   
   # initialise output vector for all the fits for this condition
@@ -243,7 +243,7 @@ for(c in 1:2){
   
   ## loop through all subs, fit data, store best fits
   #for(s in 1:length(subList)){
-  for(s in 101:length(subList)){
+  for(s in 1:length(subList)){
       
     #pull out data for this subject
     subData <- subset(importDat, importDat$subject == subList[s])
