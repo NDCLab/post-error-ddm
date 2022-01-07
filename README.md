@@ -1,44 +1,35 @@
-# [project name]
+# Post-Error Drift Diffusion Modeling (DDM)
 
 ## Project Goal
-:point_right: Replace this text with a pithy description of the goal of the data analysis project.
+Modeling post-error behaviors to examine individual differences.
 
 
 ## Background & Design
-:point_right: Replace this text with a slightly longer (but still only max 250 words) description of the project background and its design. 
+Social anxiety emerges in late childhood and early adolescence, a period in which cognitive control is developing (Padilla et al., 2014). Cognitive control, specifically error monitoring by way of the error-related negativity (ERN), has been studied as a predictor for social anxiety (Buzzell, Troller-Renfree, et al., 2017). Error monitoring involves the detection of errors which influences the regulation of behavior (Botvinick et al., 2001). Although the connection between error monitoring and social anxiety during childhood-adolescence is well documented (Lahat et al., 2014), it remains unsolved why the ERN relates to social anxiety. Current literature has focused mainly on the initial detection of errors (error monitoring) and has largely neglected the implementation of cognitive control after errors, post-error processing. While traditional theories posit that post-error processing is improved after error monitoring, this is not always the case (Buzzell, Beatty, et al., 2017), and performance-based fears in social anxiety may impact the attention allocated to errors. 
 
 
 ## Roadmap
-:point_right: Insert graphic of planned project releases. [This site](https://app.diagrams.net/) allows you to build a graphic that is connected to GitHub, so that changes you make are treated as GitHub commits.
+Coming soon!
 
 
 ## Contents
-:point_right: This section should introduce the content that is published on `main`. Example:
-
-
-#### 2021-07-01 SPR Poster
-This is a description of the poster. There is a matching folder in the repo.
-
-:point_right: When you first set up this readme file, you might replace everything under "Contents" here with something like "Watch for our first release!"
+First release coming soon!
 
 
 ## Work in Development
 This `main` branch contains completed releases for this project. For all work-in-progress, please switch over to the `dev` branches.
 
-:point_right: Keep the "Work in Development" text above as the default NDCLab "blurb" to help visitors navigate the repo. But delete this note before publishing the readme file.
-
 
 ## Contributors
 | Name | Role |
 | ---  | ---  |
-| insert team member | add team member's role |
-| insert team member | add team member's role |
-| insert team member | add team member's role |
+| Olivia Stibolt | Project lead |
+| George Buzzell | Project co-lead |
 
-Learn more about us [here](www.ndclab.com/people).
+
+Learn more about us [here](https://www.ndclab.com/people).
 
 
 ## Contributing
 If you are interested in contributing, please read our [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
-:point_right: Keep the "Contributing" text above as the default NDCLab "blurb" to help visitors navigate the repo. But delete this note before publishing the readme file.
