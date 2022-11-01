@@ -1,44 +1,42 @@
-# [project name]
+# Post-Error Drift Diffusion Modeling (DDM)
 
 ## Project Goal
-:point_right: Replace this text with a pithy description of the goal of the data analysis project.
+Modeling post-error behaviors to examine individual differences.
 
 
 ## Background & Design
-:point_right: Replace this text with a slightly longer (but still only max 250 words) description of the project background and its design. 
+Anxiety emerges in late childhood and early adolescence, a period in which cognitive control is developing [(Padilla et al., 2014)](https://www-sciencedirect-com.ezproxy.fiu.edu/science/article/pii/S1388245713011346?casa_token=GueROdbwdvAAAAAA:akgkzK2aBuLLN8jeaduLrD-VnqBI7tFP2hNQxRG3AdWqB7AIg-KeAD9p6nGyLQ0GRSf4yVWmkA). Cognitive control, specifically error monitoring by way of the error-related negativity (ERN), has been studied as a predictor for anxiety [(Buzzell, Troller-Renfree, et al., 2017)](https://pubmed.ncbi.nlm.nih.gov/29173744/). Error monitoring involves the detection of errors which influences the regulation of behavior [(Botvinick et al., 2001)](https://pubmed.ncbi.nlm.nih.gov/11488380/). Although the connection between error monitoring and anxiety during childhood-adolescence is well documented [(Lahat et al., 2014)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4323582/), it remains unsolved why the ERN relates to anxiety. Current literature has focused mainly on the initial detection of errors (error monitoring) and has largely neglected the implementation of cognitive control after errors, post-error processing. Furthermore, it remains unknown why anxiety is associated with reduced error monitoring in younger children, but increased error monitoring during the transition to adolescence and into adulthood [(Meyer, 2017)](https://psycnet.apa.org/record/2017-45029-007). 
+
+This project will utilize drift diffusion modeling to examine post-error behavior and its relationship to anxiety across age.
+
+The aims are as follows:
+Aim 1: Among a treatment-seeking sample, understand how post-error processing changes across age 
+Aim 2: Explore whether age moderates a possible link between post-error processing and anxiety symptom levels among treatment-seeking youth 
+
 
 
 ## Roadmap
-:point_right: Insert graphic of planned project releases. [This site](https://app.diagrams.net/) allows you to build a graphic that is connected to GitHub, so that changes you make are treated as GitHub commits.
+Coming soon!
 
 
 ## Contents
-:point_right: This section should introduce the content that is published on `main`. Example:
-
-
-#### 2021-07-01 SPR Poster
-This is a description of the poster. There is a matching folder in the repo.
-
-:point_right: When you first set up this readme file, you might replace everything under "Contents" here with something like "Watch for our first release!"
+First release coming soon!
 
 
 ## Work in Development
 This `main` branch contains completed releases for this project. For all work-in-progress, please switch over to the `dev` branches.
 
-:point_right: Keep the "Work in Development" text above as the default NDCLab "blurb" to help visitors navigate the repo. But delete this note before publishing the readme file.
-
 
 ## Contributors
 | Name | Role |
 | ---  | ---  |
-| insert team member | add team member's role |
-| insert team member | add team member's role |
-| insert team member | add team member's role |
+| Olivia Stibolt | Formal Analysis, Writing - Original Draft |
+| George Buzzell | Supervision, Writing - Review & Editing |
 
-Learn more about us [here](www.ndclab.com/people).
+
+Learn more about us [here](https://www.ndclab.com/people).
 
 
 ## Contributing
 If you are interested in contributing, please read our [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
-:point_right: Keep the "Contributing" text above as the default NDCLab "blurb" to help visitors navigate the repo. But delete this note before publishing the readme file.
