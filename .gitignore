@@ -3,3 +3,4 @@
 
 # ignore data specific files
 derivatives/*
+input/*
