@@ -11,4 +11,4 @@ The files are as follows:
 6. RT_Acc_df_for_clean_flanker_data.csv: generated csv used in analysis script
 7. rawFlankerLength.csv: generated csv used in analysis script
 
-The scripts used for this project are found in this repository: post-error-ddm/input/manuscript-code
+The scripts used for this project are found in this repository: post-error-ddm/code
