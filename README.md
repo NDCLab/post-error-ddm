@@ -5,22 +5,12 @@ Modeling post-error behaviors to examine individual differences.
 
 
 ## Background & Design
-Anxiety emerges in late childhood and early adolescence, a period in which cognitive control is developing [(Padilla et al., 2014)](https://www-sciencedirect-com.ezproxy.fiu.edu/science/article/pii/S1388245713011346?casa_token=GueROdbwdvAAAAAA:akgkzK2aBuLLN8jeaduLrD-VnqBI7tFP2hNQxRG3AdWqB7AIg-KeAD9p6nGyLQ0GRSf4yVWmkA). Cognitive control, specifically error monitoring by way of the error-related negativity (ERN), has been studied as a predictor for anxiety [(Buzzell, Troller-Renfree, et al., 2017)](https://pubmed.ncbi.nlm.nih.gov/29173744/). Error monitoring involves the detection of errors which influences the regulation of behavior [(Botvinick et al., 2001)](https://pubmed.ncbi.nlm.nih.gov/11488380/). Although the connection between error monitoring and anxiety during childhood-adolescence is well documented [(Lahat et al., 2014)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4323582/), it remains unsolved why the ERN relates to anxiety. Current literature has focused mainly on the initial detection of errors (error monitoring) and has largely neglected the implementation of cognitive control after errors, post-error processing. Furthermore, it remains unknown why anxiety is associated with reduced error monitoring in younger children, but increased error monitoring during the transition to adolescence and into adulthood [(Meyer, 2017)](https://psycnet.apa.org/record/2017-45029-007). 
+Anxiety emerges in late childhood and early adolescence, a period in which cognitive control is developing [(Padilla et al., 2014)](https://www-sciencedirect-com.ezproxy.fiu.edu/science/article/pii/S1388245713011346?casa_token=GueROdbwdvAAAAAA:akgkzK2aBuLLN8jeaduLrD-VnqBI7tFP2hNQxRG3AdWqB7AIg-KeAD9p6nGyLQ0GRSf4yVWmkA). Cognitive control, specifically error monitoring by way of the error-related negativity (ERN), has been studied as a predictor for anxiety [(Buzzell, Troller-Renfree, et al., 2017)](https://pubmed.ncbi.nlm.nih.gov/29173744/). Error monitoring involves the detection of errors which influences the regulation of behavior [(Botvinick et al., 2001)](https://pubmed.ncbi.nlm.nih.gov/11488380/). Current literature has focused mainly on the initial detection of errors (error monitoring) and has largely neglected the implementation of cognitive control after errors, post-error processing [(Schroder & Moser, 2014)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3972447/). Furthermore, it remains unknown why anxiety is associated with reduced error monitoring in younger children, but increased error monitoring during the transition to adolescence and into adulthood [(Meyer, 2017)](https://psycnet.apa.org/record/2017-45029-007). 
 
-This project will utilize drift diffusion modeling to examine post-error behavior and its relationship to anxiety across age.
-
-The aims are as follows:
-Aim 1: Among a treatment-seeking sample, understand how post-error processing changes across age 
-Aim 2: Explore whether age moderates a possible link between post-error processing and anxiety symptom levels among treatment-seeking youth 
-
-
-
-## Roadmap
-Coming soon!
-
+This project utilizes drift diffusion modeling to examine post-error behavior and its relationship to anxiety across age.
 
 ## Contents
-First release coming soon!
+For the manuscript "Exploring the role of post-error processing in social anxiety across development", the code used is located in the "code" folder and the data is located in the "input" folder in this repository. See the readmes in the respective folders for details about the files.
 
 
 ## Work in Development
