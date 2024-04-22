@@ -20,8 +20,11 @@ This `main` branch contains completed releases for this project. For all work-in
 ## Contributors
 | Name | Role |
 | ---  | ---  |
-| Olivia Stibolt | Formal Analysis, Writing - Original Draft |
-| George Buzzell | Supervision, Writing - Review & Editing |
+| Olivia Stibolt | Formal analysis, Writing - original draft |
+| Fabian Soto | Advising on computational modeling, Writing- review & editing |
+| Jeremy Pettit | Data collection and management, Writing- review & editing |
+| Yasmin Rey | Data collection and management, Writing- review & editing |
+| George Buzzell | Supervision, Writing - review & editing |
 
 
 Learn more about us [here](https://www.ndclab.com/people).
