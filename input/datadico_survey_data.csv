@@ -153,3 +153,7 @@ med3_length,legnth of time taking med3,NA,NA,Numeric,"[1,5]","1, less than 4 wks
 med3_change,has there been a change of dosage for med3 in last 4 wks?,NA,NA,Integer,"0,1","0, no | 1, yes ",NA,1,NA,direct
 med3_stopped,has your child stopped taking med3,NA,NA,Integer,"0,1","0, no | 1, yes ",NA,1,NA,direct
 stim_meds_PRE,Stimulant medication status,NA,NA,Integer,"0,1","0, not taking stimulants | 1, taking stimulants",NA,1,NA,code
+med1_type,medication 1 type,NA,NA,Integer,"[1,8]","1, Stimulant | 2, non-stimulant ADHD med | 3, antidepressants | 4, anti-anxiety | 5, anti-psychotic | 6, mood stabilizer | 7, other psychoactive | 8, non-psychoactive med",NA,1,NA,manual
+med2_type,medication 2 type,NA,NA,Integer,"[1,8]","1, Stimulant | 2, non-stimulant ADHD med | 3, antidepressants | 4, anti-anxiety | 5, anti-psychotic | 6, mood stabilizer | 7, other psychoactive | 8, non-psychoactive med",NA,1,NA,manual
+med3_type,medication 3 type,NA,NA,Integer,"[1,8]","1, Stimulant | 2, non-stimulant ADHD med | 3, antidepressants | 4, anti-anxiety | 5, anti-psychotic | 6, mood stabilizer | 7, other psychoactive | 8, non-psychoactive med",NA,1,NA,manual
+psychoactive_meds_PRE,is the child on psychoactive medications,NA,NA,Integer,"0,1","0, not taking psychoactive medication | 1, taking psychoactive medication",NA,1,NA,code
